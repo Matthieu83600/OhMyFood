@@ -3,7 +3,7 @@
 Projet 4 du parcours "Intégrateur Web" chez OpenClassrooms. 
 L'objectif est de développer le site OhMyFood en "Mobile First" et de le dynamiser avec des animations CSS en utilisant le préprocesseur Sass.
 
-		![screenshot du site](./ressources/OhMyFood.png)
+![screenshot du site](./ressources/OhMyFood.png)
 
 # Mission :
 
@@ -19,7 +19,7 @@ L'objectif est de développer le site OhMyFood en "Mobile First" et de le dynami
 **Identité graphique :**
 - **Polices :** Shrikhand, et Roboto
 - **Couleurs :**
-![screenshot couleurs](./ressources/couleurs.png)
+![screenshot couleurs](./ressources/Couleurs.png)
 
 **Animations :**
 - **Un loader :** sur la page d'accueil, durée : 1 à 3s 
