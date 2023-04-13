@@ -1,0 +1,36 @@
+.research {
+  background: #EAEAEA;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+}
+.research__icon {
+  font-size: 1.2rem;
+  padding: 1.04rem;
+  margin-left: 15px;
+}
+.research__input {
+  border: none;
+  background: #EAEAEA;
+  width: 150px;
+}
+
+.description {
+  background: #F6F6F6;
+  padding: 2.469rem 0 3.563rem 0;
+  text-align: center;
+}
+.description p {
+  padding: 1.7rem;
+}
+
+.function {
+  padding: 3rem 1.25rem;
+}
+
+.restaurants {
+  background: #F6F6F6;
+  padding: 3.375rem 1.25rem;
+}
+
+/*# sourceMappingURL=main_page.css.map */

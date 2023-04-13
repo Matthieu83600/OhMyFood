@@ -6,8 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main_page.css">
         <title>OhMyFood</title>
     </head>
     <body>
@@ -15,16 +16,16 @@
 
         </div>
         <header class="header">
-            <img src="images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
+            <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
         </header>
-        <form>
-            <i class="fa-solid fa-location-dot"></i>
-            <input type="search" value="Paris, Belleville">
+        <form class="research">
+            <i class="research__icon fa-solid fa-location-dot"></i>
+            <input class="research__input" type="search" value="Paris, Belleville">
         </form>
         <main>
             <section class="description">
                 <h1>Réservez le menu qui vous convient</h1>
-                <p>Déouvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <button>Explorer nos restaurants</button>
             </section>
             <section class="function">
@@ -99,20 +100,20 @@
             </section>
         </main>
         <footer class="footer">
-            <h2>ohmyfood</h2>
+            <h2 class="footer__title">ohmyfood</h2>
             <ul>
-                <li>
+                <li class="footer__link">
                     <i class="fa-solid fa-utensils"></i>
                     <a href="#">Proposer un restaurant</a>
                 </li>
-                <li>
+                <li class="footer__link">
                     <i class="fa-solid fa-handshake-angle"></i>
                     <a href="#">Devenir partenaire</a>
                 </li>
-                <li>
+                <li class="footer__link">
                     <a href="#">Mentions légales</a>
                 </li>
-                <li>
+                <li class="footer__link">
                     <a href="mailto:contact@ohmyfood.com">Contact</a>
                 </li>
             </ul>

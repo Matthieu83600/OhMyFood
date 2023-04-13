@@ -1,0 +1,15 @@
+.footer {background: $color-footer-bg;
+         color: $color-txt-white;
+         padding: $padding-footer;
+
+         &__title {
+            @include footer__title;
+            padding-bottom: 1rem;
+         }
+         &__link {
+            padding-bottom: 0.44rem;
+            & a {
+                color: $color-txt-white;
+            }
+         }
+}

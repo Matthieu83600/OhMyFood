@@ -1,0 +1,10 @@
+.header {align-content: center;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         height: 4rem;
+         justify-items: center;
+
+            &__arrow {font-size: 1.5rem;}
+
+            &__logo {grid-column-start: 2;}
+        }

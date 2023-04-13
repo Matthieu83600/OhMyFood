@@ -1,0 +1,14 @@
+.research {background: $color-research-bg;
+           box-shadow: $shadow-research;
+           text-align: center;
+           width: 100%;
+                &__icon {font-size: 1.2rem;
+                         padding: $padding-icon;
+                         margin-left: 15px;
+
+                }
+                &__input {border: none;
+                          background: $color-research-bg;
+                          width: 150px;
+                }
+          }
