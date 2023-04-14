@@ -1,9 +1,11 @@
 //-------------- Base --------------//
 @import "base/color.scss";
-@import "base/padding.scss";
+//------------ Components ---------//
 
 //----------- Layout --------------//
 @import "layout/research.scss";
 @import "layout/description.scss";
 @import "layout/function.scss";
-@import "layout/restaurants.scss"
+@import "layout/restaurants.scss";
+
+//------------ Utils -------------//

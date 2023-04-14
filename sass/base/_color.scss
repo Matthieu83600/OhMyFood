@@ -6,14 +6,19 @@ $color-tertiary: #99E2D0;
 //------------ Background -----------//
 $color-research-bg: #EAEAEA;
 $color-description-bg: #F6F6F6;
-
-$color-btn-function: #F7F7F7;
-
 $color-restaurants-bg: #F6F6F6;
-
 $color-footer-bg: #353535;
+
+//------------ Buttons --------------//
+$color-btn: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%) ;
+$color-function-steps-element: #F7F7F7;
+$color-icon-steps: #7E7E7E;
+
 //------------ Shadow --------------//
 $shadow-research: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+$shadow-btn: 0px 4px 10px rgba(0, 0, 0, 0.25);
+$shadow-btn-hover: 0px 6px 12px rgba(0, 0, 0, 0.50);
+$shadow-function-steps-element: 0px 4px 15px rgba(0, 0, 0, 0.15);
 
-//----------- Texte ---------------//
+//----------- Text ---------------//
 $color-txt-white: white;

@@ -1,0 +1,16 @@
+@mixin btn {background: $color-btn;
+            border-radius: 25px;
+            box-shadow: $shadow-btn;
+            color: $color-txt-white;
+            cursor: pointer;
+            opacity: 1;
+            padding: 0.813rem 1.172rem;
+
+            &:hover {box-shadow: $shadow-btn-hover;
+                      opacity: 0.85;
+                     }   
+           }
+
+.button {
+    @include btn;
+}

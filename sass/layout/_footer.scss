@@ -1,6 +1,6 @@
 .footer {background: $color-footer-bg;
          color: $color-txt-white;
-         padding: $padding-footer;
+         padding: 1.375rem 1.563rem;
 
          &__title {
             @include footer__title;

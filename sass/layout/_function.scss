@@ -1,1 +1,32 @@
-.function {padding: $padding-function;}
+.function {max-width: 1440px;
+           padding: 3rem 1.25rem;
+
+           &__steps {counter-reset: compteur;
+                     display: grid;
+                     grid-template-columns: 1fr;
+                     padding-left: 0.85rem;
+
+                     &-element {background: $color-function-steps-element;
+                                border-radius: 20px;
+                                box-shadow: $shadow-function-steps-element;
+                                counter-increment: compteur;
+                                margin-top: 1.625rem;
+                                padding: 1.563rem;
+                                width: 100%;
+
+                                .fas {color: $color-icon-steps;
+                                      padding: 0 1.3rem ;
+                                     }
+                                &::before {background: $color-primary;
+                                           border-radius: 100%;
+                                           color: $color-txt-white;
+                                           content: " " counter(compteur);
+                                           margin-left: -2.4rem;
+                                           padding: 0.3rem 0.6rem;
+                                          }
+                                &:hover {
+                                         .fas {color: $color-primary;}
+                                        }          
+                               }
+                    }
+          }
