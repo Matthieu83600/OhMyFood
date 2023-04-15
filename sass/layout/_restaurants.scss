@@ -1,3 +1,27 @@
 .restaurants {background: $color-restaurants-bg;
-              padding: 3.375rem 1.25rem;
+              padding: 3.3rem 1.25rem;
+
+              &__cards {@include cards_restaurants;
+
+                        &-img {border-radius: 15px 15px 0 0;
+                               height: 11rem;
+                               object-fit: cover;
+                               width: 100%;
+                              }
+                        
+                        &-new {@include new_restaurants;}
+
+                        &-contents {height: 4.7rem;
+                                    gap: 5px;
+                                    padding: 0.8rem;
+                                    width: 100%;
+
+                                    &-icon {@include icon-restaurants;}
+                                   }
+                        
+                        
+                        
+
+                        
+                       }
              }
