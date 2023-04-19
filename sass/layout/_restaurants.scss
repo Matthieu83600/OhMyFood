@@ -11,17 +11,16 @@
                         
                         &-new {@include new_restaurants;}
 
-                        &-contents {height: 4.7rem;
-                                    gap: 5px;
-                                    padding: 0.8rem;
+                        &-contents {display: grid;
+                                    grid-template-columns: 2fr 1fr;
+                                    height: 4.8rem;
                                     width: 100%;
+
+                                    &-txt {gap: 5px;
+                                           padding: 0.8rem;
+                                          }
 
                                     &-icon {@include icon-restaurants;}
                                    }
-                        
-                        
-                        
-
-                        
                        }
              }
