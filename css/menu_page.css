@@ -1,0 +1,112 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.menu {
+  background: #F7F7F7;
+  border-top-left-radius: 1.56rem;
+  border-top-right-radius: 1.56rem;
+  box-sizing: border-box;
+  height: 75.69rem;
+  margin-top: 13.75rem;
+  padding: 1.5rem 1.07rem;
+  width: 100%;
+  z-index: 0;
+}
+.menu__title {
+  font-family: "Shrikhand", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.menu__title-icon {
+  font-size: 1.5rem;
+  justify-self: end;
+  margin-right: 1.56rem;
+  margin-top: 0.32rem;
+  position: relative;
+}
+.menu__entree {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.menu__entree-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 3px solid #99E2D0;
+  margin-top: 2.5rem;
+  padding-bottom: 0.32rem;
+  width: 2.375rem;
+}
+.menu__entree-container {
+  background: white;
+  border-radius: 0.9402rem;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  height: 4.3125rem;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  width: 21.8125rem;
+}
+.menu__meal {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.menu__meal-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 3px solid #99E2D0;
+  margin-top: 2.5rem;
+  padding-bottom: 0.32rem;
+  width: 2.375rem;
+}
+.menu__meal-container {
+  background: white;
+  border-radius: 0.9402rem;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  height: 4.3125rem;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  width: 21.8125rem;
+}
+.menu__dessert {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.menu__dessert-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 3px solid #99E2D0;
+  margin-top: 2.5rem;
+  padding-bottom: 0.32rem;
+  width: 2.375rem;
+}
+.menu__dessert-container {
+  background: white;
+  border-radius: 0.9402rem;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  height: 4.3125rem;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  width: 21.8125rem;
+}
+.menu__button {
+  margin: 2.5rem 5.9rem;
+  width: 50%;
+}
+
+.main__img {
+  height: 17.2rem;
+  position: absolute;
+  top: 3.94rem;
+  width: 100%;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=menu_page.css.map */

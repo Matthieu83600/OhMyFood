@@ -1,6 +1,17 @@
 body {font-family: "Roboto", sans-serif;}
 
+@mixin menu__title {font-family: 'Shrikhand', sans-serif;
+                    font-style: italic;
+                    font-weight: 400;
+                   }
+
+@mixin menu__subtitle {font-size: 16px;
+                       font-style: normal;
+                       font-weight: 300;
+                       text-transform: uppercase;
+                      }
+
 @mixin footer__title {font-family: 'Shrikhand', sans-serif;
-                font-style: italic;
-                font-weight: 400;
-               }
+                      font-style: italic;
+                      font-weight: 400;
+                     }

@@ -37,6 +37,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   height: 4rem;
   justify-items: center;
+  width: 100%;
 }
 .header__arrow {
   font-size: 1.5rem;
@@ -48,7 +49,9 @@ body {
 .footer {
   background: #353535;
   color: white;
+  height: 11.625rem;
   padding: 1.375rem 1.563rem;
+  width: 100%;
 }
 .footer__title {
   font-family: "Shrikhand", sans-serif;

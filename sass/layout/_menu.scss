@@ -1,0 +1,67 @@
+.menu {background: $color-menu;
+       border-top-left-radius: 1.56rem;
+       border-top-right-radius: 1.56rem;
+       box-sizing: border-box;
+       height: 75.69rem;
+       margin-top: 13.75rem;
+       padding: 1.5rem 1.07rem;
+       width: 100%;
+       z-index: 0;
+
+       &__title {@include menu__title;
+                 display: grid;
+                 grid-template-columns: auto auto;
+
+                 &-icon {
+                         font-size: 1.5rem;
+                         justify-self: end;
+                         margin-right: 1.56rem;
+                         margin-top: 0.32rem;
+                         position: relative;
+                        }
+                }
+
+       &__entree {display: grid;
+                  grid-template-columns: 1fr;
+
+                  &-title {@include menu__subtitle;
+                           border-bottom: 3px solid $color-tertiary;
+                           margin-top: 2.5rem;
+                           padding-bottom: 0.32rem;
+                           width: 2.375rem;
+                          }
+              
+                  &-container {@include card-menu;}
+                 } 
+
+       &__meal {display: grid;
+                grid-template-columns: 1fr;
+
+                &-title {@include menu__subtitle;
+                         border-bottom: 3px solid $color-tertiary;
+                         margin-top: 2.5rem;
+                         padding-bottom: 0.32rem;
+                         width: 2.375rem;
+                        }
+              
+                &-container {@include card-menu;}
+               }
+
+       &__dessert {display: grid;
+                   grid-template-columns: 1fr;
+              
+                   &-title {@include menu__subtitle;
+                            border-bottom: 3px solid $color-tertiary;
+                            margin-top: 2.5rem;
+                            padding-bottom: 0.32rem;
+                            width: 2.375rem;
+                           }
+
+                   &-container {@include card-menu;}
+                  }
+
+       &__button {margin: 2.5rem 5.9rem;
+                  width: 50%;
+                 }
+
+      }
