@@ -31,6 +31,14 @@ body {
   opacity: 0.85;
 }
 
+.fa-heart:hover {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  font-weight: bold;
+  transition: all 0.3s linear;
+  -webkit-text-fill-color: transparent;
+}
+
 .header {
   align-content: center;
   display: grid;
