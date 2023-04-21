@@ -7,7 +7,7 @@ body {
   border-top-left-radius: 1.56rem;
   border-top-right-radius: 1.56rem;
   box-sizing: border-box;
-  height: 75.69rem;
+  height: 74.69rem;
   margin-top: 13.75rem;
   padding: 1.5rem 1.07rem;
   width: 100%;
@@ -21,6 +21,7 @@ body {
   grid-template-columns: auto auto;
 }
 .menu__title-icon {
+  cursor: pointer;
   font-size: 1.5rem;
   justify-self: end;
   margin-right: 1.56rem;
@@ -31,7 +32,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
 }
-.menu__entree-title {
+.menu__entree-subtitle {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -46,15 +47,15 @@ body {
   border-radius: 0.9402rem;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   height: 4.3125rem;
-  margin-top: 0.75rem;
+  margin-top: 1rem;
   padding: 0.75rem;
-  width: 21.8125rem;
+  width: 22rem;
 }
 .menu__meal {
   display: grid;
   grid-template-columns: 1fr;
 }
-.menu__meal-title {
+.menu__meal-subtitle {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -69,15 +70,15 @@ body {
   border-radius: 0.9402rem;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   height: 4.3125rem;
-  margin-top: 0.75rem;
+  margin-top: 1rem;
   padding: 0.75rem;
-  width: 21.8125rem;
+  width: 22rem;
 }
 .menu__dessert {
   display: grid;
   grid-template-columns: 1fr;
 }
-.menu__dessert-title {
+.menu__dessert-subtitle {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -92,12 +93,12 @@ body {
   border-radius: 0.9402rem;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   height: 4.3125rem;
-  margin-top: 0.75rem;
+  margin-top: 1rem;
   padding: 0.75rem;
-  width: 21.8125rem;
+  width: 22rem;
 }
 .menu__button {
-  margin: 2.5rem 5.9rem;
+  margin: 3.5rem 5rem 1rem 5rem;
   width: 50%;
 }
 

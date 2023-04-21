@@ -17,7 +17,8 @@
                         width: 5rem;
                        }
 
-@mixin icon-restaurants {font-size: 1.5rem;
+@mixin icon-restaurants {cursor: pointer;
+                         font-size: 1.5rem;
                          justify-self: end;
                          margin-right: 2rem;
                          margin-top: 1rem;
