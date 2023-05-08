@@ -21,47 +21,31 @@
                         }
                 }
 
-       &__entree {display: grid;
+       &__card {display: grid;
                   grid-template-columns: 1fr;
 
                   &-subtitle {@include menu__subtitle;
-                           border-bottom: 3px solid $color-tertiary;
-                           margin-top: 2.5rem;
-                           padding-bottom: 0.32rem;
-                           width: 2.375rem;
-                          }
+                              border-bottom: 3px solid $color-tertiary;
+                              margin-top: 2.5rem;
+                              padding-bottom: 0.32rem;
+                              width: 2.375rem;
+                             }
               
-                  &-container {@include card-menu;}
+                  &-container {@include card-menu;
+                               
+                               &-price {align-items: end;
+                                        display: inline-flex;
+                                        margin-top: 1.25rem;
+                                        position: absolute;
+                                        right: 0.3rem;
+                                        width: 3rem;
+                                       }
+                                       
+                               &-check {align-items: center;
+                                        display: inline-flex; 
+                                        
+                                        
+                                       }
+                              }
                  } 
-
-       &__meal {display: grid;
-                grid-template-columns: 1fr;
-
-                &-subtitle {@include menu__subtitle;
-                         border-bottom: 3px solid $color-tertiary;
-                         margin-top: 2.5rem;
-                         padding-bottom: 0.32rem;
-                         width: 2.375rem;
-                        }
-              
-                &-container {@include card-menu;}
-               }
-
-       &__dessert {display: grid;
-                   grid-template-columns: 1fr;
-              
-                   &-subtitle {@include menu__subtitle;
-                            border-bottom: 3px solid $color-tertiary;
-                            margin-top: 2.5rem;
-                            padding-bottom: 0.32rem;
-                            width: 2.375rem;
-                           }
-
-                   &-container {@include card-menu;}
-                  }
-
-       &__button {margin: 3.5rem 5rem 1rem 5rem;
-                  width: 50%;
-                 }
-
-      }
+       }

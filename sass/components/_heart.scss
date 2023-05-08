@@ -1,9 +1,11 @@
-.fa-heart {         
-           &:hover {background: $color-heart;
-                    background-clip: text;
-                    font-weight: bold;
-                    transition: all 0.3s linear;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;      
+@mixin heart {         
+           &:active {background: $color-heart;
+                     background-clip: text;
+                     font-weight: bold;
+                     transition: all 0.1s linear;
+                     -webkit-background-clip: text;
+                     -webkit-text-fill-color: transparent;       
                    }
           }
+
+.fa-heart {@include heart}

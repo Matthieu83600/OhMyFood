@@ -38,13 +38,11 @@
 
 @keyframes loaderSize {0% {transform: scale(1) rotate(0);}
 
-                       16% {transform: scale(0) rotate(0);}
-
-                       33% {transform: scale(1) rotate(-360deg);}
+                       16% {transform: scale(1) rotate(-360deg);}
 
                        66% {transform: scale(1) rotate(-360deg);}
 
-                       100% {transform: scale(0) rotate(-360deg);}
+                       100% {transform: scale(0) rotate(360deg);}
                       }
 
 @keyframes loaderColor {0% {color: $color-primary;}
