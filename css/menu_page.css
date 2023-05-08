@@ -2,14 +2,29 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@keyframes cards {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  30% {
+    opacity: 0.5;
+  }
+  65% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menu {
   background: #F7F7F7;
   border-top-left-radius: 1.56rem;
   border-top-right-radius: 1.56rem;
   box-sizing: border-box;
-  height: 74.69rem;
   margin-top: 13.75rem;
   padding: 1.5rem 1.07rem;
+  text-align: center;
   width: 100%;
   z-index: 0;
 }
@@ -43,6 +58,7 @@ body {
   width: 2.375rem;
 }
 .menu__card-container {
+  animation: cards 0.5s 1 both;
   background: white;
   border-radius: 0.9402rem;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
@@ -50,19 +66,57 @@ body {
   height: 4.3125rem;
   margin-top: 1rem;
   padding: 0.75rem;
+  text-align: start;
   width: 100%;
 }
+.menu__card-container:nth-child(1) {
+  animation-delay: 0.15s;
+}
+.menu__card-container:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.menu__card-container:nth-child(3) {
+  animation-delay: 0.45s;
+}
+.menu__card-container:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.menu__card-container-info {
+  width: 95%;
+}
+.menu__card-container-info p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15.0431px;
+  margin-top: 0.3125rem;
+}
 .menu__card-container-price {
-  align-items: end;
-  display: inline-flex;
-  margin-top: 1.25rem;
-  position: absolute;
-  right: 0.3rem;
-  width: 3rem;
+  align-self: flex-end;
+  display: flex;
+  margin-right: -30px;
+  margin-top: 1.65rem;
+  width: 2%;
 }
 .menu__card-container-check {
   align-items: center;
-  display: inline-flex;
+  background-color: #99E2D0;
+  border-radius: 0 0.9375rem 0.9375rem 0;
+  display: flex;
+  height: 4.3125rem;
+  justify-content: center;
+  margin-right: -12px;
+  margin-top: -12px;
+  visibility: hidden;
+  width: 20%;
+}
+.menu__card-container-check .fa-circle-check {
+  color: white;
+  font-size: 1.3rem;
+}
+.menu__button {
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  width: 52%;
 }
 
 .main__img {

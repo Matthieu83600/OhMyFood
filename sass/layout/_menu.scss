@@ -2,9 +2,9 @@
        border-top-left-radius: 1.56rem;
        border-top-right-radius: 1.56rem;
        box-sizing: border-box;
-       height: 74.69rem;
        margin-top: 13.75rem;
        padding: 1.5rem 1.07rem;
+       text-align: center;
        width: 100%;
        z-index: 0;
 
@@ -22,30 +22,50 @@
                 }
 
        &__card {display: grid;
-                  grid-template-columns: 1fr;
+                grid-template-columns: 1fr;
 
-                  &-subtitle {@include menu__subtitle;
-                              border-bottom: 3px solid $color-tertiary;
-                              margin-top: 2.5rem;
-                              padding-bottom: 0.32rem;
-                              width: 2.375rem;
-                             }
+                &-subtitle {@include menu__subtitle;
+                            border-bottom: 3px solid $color-tertiary;
+                            margin-top: 2.5rem;
+                            padding-bottom: 0.32rem;
+                            width: 2.375rem;
+                           }
               
-                  &-container {@include card-menu;
+                &-container {@include card-menu;
+                             &-info {width: 95%;}   
+                             &-info p {@include menu__info-p;
+                                       margin-top: 0.3125rem; 
+                                      }
                                
-                               &-price {align-items: end;
-                                        display: inline-flex;
-                                        margin-top: 1.25rem;
-                                        position: absolute;
-                                        right: 0.3rem;
-                                        width: 3rem;
-                                       }
+                             &-price {align-self: flex-end;
+                                      display: flex;
+                                      margin-right: -30px;
+                                      margin-top: 1.65rem;   
+                                      width: 2%;
+                                     }
                                        
-                               &-check {align-items: center;
-                                        display: inline-flex; 
+                             &-check {align-items: center;
+                                      background-color: $color-tertiary;
+                                      border-radius: 0 0.9375rem 0.9375rem 0;
+                                      display: flex;
+                                      height: 4.3125rem;
+                                      justify-content: center;
+                                      margin-right: -12px;
+                                      margin-top: -12px;
+                                      visibility: hidden;
+                                      width: 20%;
+                                                                  
+                                      .fa-circle-check {color: white;
+                                                        font-size: 1.3rem;
+                                                       }
                                         
-                                        
-                                       }
-                              }
-                 } 
+                                     }
+                            }
+               } 
+
+        &__button {margin-bottom: 2.5rem;
+                   margin-top: 2.5rem;
+                   width: 52%;
+                  }   
+
        }

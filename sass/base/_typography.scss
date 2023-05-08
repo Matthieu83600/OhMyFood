@@ -11,6 +11,11 @@ body {font-family: "Roboto", sans-serif;}
                        text-transform: uppercase;
                       }
 
+@mixin menu__info-p {font-style: normal;
+                     font-weight: 300;
+                     font-size: 15.0431px;
+                    }
+
 @mixin footer__title {font-family: 'Shrikhand', sans-serif;
                       font-style: italic;
                       font-weight: 400;

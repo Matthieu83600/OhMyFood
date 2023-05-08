@@ -1,9 +1,25 @@
-@mixin card-menu {background: $color-menu-container;
+@mixin card-menu {animation: cards 0.5s 1 both;
+                  @for $i from 1 through 4 {
+                                            &:nth-child(#{$i}) {animation-delay:$i*0.15s;}
+                                           }
+                  background: $color-menu-container;
                   border-radius: 0.9402rem;
                   box-shadow: $shadow-menu;
                   display: flex;
                   height: 4.3125rem;
                   margin-top: 1rem;
                   padding: 0.75rem;
+                  text-align: start;
                   width: 100%;
                  }
+
+                 @keyframes cards {0% {opacity:0;
+                                       transform: translateY(20px);
+                                      }
+
+                                   30% {opacity: 0.5;}
+
+                                   65% {opacity: 0.7;}
+
+                                   100% {opacity:1;}
+                                  }
