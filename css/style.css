@@ -51,6 +51,13 @@ body {
 .header__arrow {
   font-size: 1.5rem;
 }
+@media (min-width: 1024px) {
+  .header__arrow {
+    font-size: 2rem;
+    justify-self: self-start;
+    padding-left: 2rem;
+  }
+}
 .header__logo {
   grid-column-start: 2;
 }
@@ -58,9 +65,17 @@ body {
 .footer {
   background: #353535;
   color: white;
-  height: 11.625rem;
   padding: 1.375rem 1.563rem;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    justify-content: end;
+    padding: 1.875rem 1.5625rem;
+  }
 }
 .footer__title {
   font-family: "Shrikhand", sans-serif;
@@ -68,10 +83,25 @@ body {
   font-weight: 400;
   padding-bottom: 1rem;
 }
-.footer__link {
-  padding-bottom: 0.44rem;
+@media (min-width: 1024px) {
+  .footer__title {
+    margin-right: 1.875rem;
+    margin-top: 3.5625rem;
+  }
 }
-.footer__link a {
+@media (min-width: 1024px) {
+  .footer__link {
+    align-items: flex-start;
+    display: flex;
+    gap: 1.5625rem;
+    margin-right: 1.875rem;
+    margin-top: 3.5625rem;
+  }
+}
+.footer__link-info {
+  padding-bottom: 0.4375rem;
+}
+.footer__link-info a {
   color: white;
 }
 

@@ -1,17 +1,29 @@
 .footer {background: $color-footer-bg;
          color: $color-txt-white;
-         height: 11.625rem;
          padding: 1.375rem 1.563rem;
          width: 100%;
+         @include desktop {display: flex;
+                           flex-direction: row-reverse;
+                           gap: 1rem;
+                           justify-content: end;           
+                           padding: 1.875rem 1.5625rem;
+                          }
 
-         &__title {
-            @include footer__title;
-            padding-bottom: 1rem;
-         }
-         &__link {
-            padding-bottom: 0.44rem;
-            & a {
-                color: $color-txt-white;
-            }
-         }
-}
+         &__title {@include footer__title;
+                   padding-bottom: 1rem;
+                   @include desktop {margin-right: 1.875rem;
+                                     margin-top: 3.5625rem;
+                                    }
+                  }
+
+         &__link {@include desktop {align-items: flex-start;
+                                    display: flex;
+                                    gap: 1.5625rem;
+                                    margin-right: 1.875rem;
+                                    margin-top: 3.5625rem;
+                                   }
+                  &-info {padding-bottom: 0.4375rem;
+                          a {color: $color-txt-white;}
+                         }                  
+                 }
+        }

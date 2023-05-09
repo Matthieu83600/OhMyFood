@@ -1,0 +1,22 @@
+// Taille minimale d'écran tablette
+$screen-tablet-min: 768px;
+
+//Taille minimale d'écran pc
+$screen-desktop-min: 1024px;
+
+// Media queries Tablette
+@mixin tablet {
+    @media (min-width: #{$screen-tablet-min})
+    {
+        @content;
+    }
+}
+
+//Media queries PC
+@mixin desktop {
+    @media (min-width: #{$screen-desktop-min})
+    {
+        @content;
+    }
+}
+    
