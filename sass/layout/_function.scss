@@ -1,10 +1,21 @@
 .function {max-width: 1440px;
            padding: 3rem 1.25rem;
 
+           @include desktop {text-align: center;
+      
+                             &__title {margin-left: 11.25rem;
+                                       text-align: start;
+                                      }
+                            }
+
            &__steps {counter-reset: compteur;
                      display: grid;
                      grid-template-columns: 1fr;
                      padding-left: 0.85rem;
+
+                     @include desktop {grid-template-columns: 1fr 1fr 1fr;
+                                       margin-left: 11.5rem;
+                                      }
 
                      &-element {background: $color-function-steps-element;
                                 border-radius: 20px;
@@ -14,16 +25,22 @@
                                 padding: 1.563rem;
                                 width: 100%;
 
+                                @include desktop {width: 75%;}
+
                                 .fas {color: $color-icon-steps;
-                                      padding: 0 1.3rem ;
+                                      padding: 0 1.3rem;
                                      }
+
                                 &::before {background: $color-primary;
                                            border-radius: 100%;
                                            color: $color-txt-white;
                                            content: " " counter(compteur);
                                            margin-left: -2.4rem;
                                            padding: 0.3rem 0.6rem;
+
+                                           @include desktop {margin-left: -4.5rem;}
                                           }
+
                                 &:hover {
                                          .fas {color: $color-primary;}
                                         }          

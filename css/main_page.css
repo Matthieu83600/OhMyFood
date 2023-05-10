@@ -1,3 +1,8 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/************************ Desktop ************************/
 .loader {
   align-items: center;
   animation: loader 0s 3s both;
@@ -90,19 +95,44 @@
   padding: 2.469rem 0 3.563rem 0;
   text-align: center;
 }
-.description p {
+.description__info {
   padding: 1.7rem;
+}
+@media (min-width: 1024px) {
+  .description__title {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .description__info {
+    padding: 2rem;
+  }
 }
 
 .function {
   max-width: 1440px;
   padding: 3rem 1.25rem;
 }
+@media (min-width: 1024px) {
+  .function {
+    text-align: center;
+  }
+  .function__title {
+    margin-left: 11.25rem;
+    text-align: start;
+  }
+}
 .function__steps {
   counter-reset: compteur;
   display: grid;
   grid-template-columns: 1fr;
   padding-left: 0.85rem;
+}
+@media (min-width: 1024px) {
+  .function__steps {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 11.5rem;
+  }
 }
 .function__steps-element {
   background: #F7F7F7;
@@ -112,6 +142,11 @@
   margin-top: 1.625rem;
   padding: 1.563rem;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .function__steps-element {
+    width: 75%;
+  }
 }
 .function__steps-element .fas {
   color: #7E7E7E;
@@ -125,6 +160,11 @@
   margin-left: -2.4rem;
   padding: 0.3rem 0.6rem;
 }
+@media (min-width: 1024px) {
+  .function__steps-element::before {
+    margin-left: -4.5rem;
+  }
+}
 .function__steps-element:hover .fas {
   color: #9356DC;
 }
@@ -133,13 +173,28 @@
   background: #F6F6F6;
   padding: 3.3rem 1.25rem;
 }
+@media (min-width: 1024px) {
+  .restaurants__title {
+    margin-left: 11.25rem;
+  }
+  .restaurants__desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10.98rem;
+    margin-right: 2rem;
+  }
+}
 .restaurants__cards {
   background: white;
   border-radius: 15px;
-  height: 15.8rem;
   margin-bottom: 1.125rem;
-  margin-top: 1.125rem;
+  margin-top: 1.5rem;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .restaurants__cards {
+    width: 78%;
+  }
 }
 .restaurants__cards-img {
   border-radius: 15px 15px 0 0;

@@ -1,9 +1,10 @@
 @mixin cards_restaurants {background: $color-restaurants-cards;
-                          border-radius: 15px;
-                          height: 15.8rem;
+                          border-radius: 15px;         
                           margin-bottom: 1.125rem;
-                          margin-top: 1.125rem;
+                          margin-top: 1.5rem;
                           width: 100%;
+
+                          @include desktop {width: 78%;}
                          }
 
 @mixin new_restaurants {background: $color-tertiary;

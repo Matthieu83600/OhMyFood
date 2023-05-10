@@ -3,6 +3,7 @@
        border-top-right-radius: 1.56rem;
        box-sizing: border-box;
        margin-top: 13.75rem;
+       overflow: hidden;
        padding: 1.5rem 1.07rem;
        text-align: center;
        width: 100%;
@@ -32,33 +33,50 @@
                            }
               
                 &-container {@include card-menu;
-                             &-info {width: 95%;}   
+                             &-info {display: flex;
+                                     flex-direction: column;
+                                     overflow: hidden;
+                                     text-overflow: ellipsis;
+                                     white-space: nowrap;
+                                     width: 95%;
+                                    }  
+                                    
+                             &-info h3 {@include menu__info-h3;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                       }
+
                              &-info p {@include menu__info-p;
                                        margin-top: 0.3125rem; 
+                                       overflow: hidden;
+                                       text-overflow: ellipsis;
+                                       white-space: nowrap;
                                       }
                                
                              &-price {align-self: flex-end;
                                       display: flex;
-                                      margin-right: -30px;
-                                      margin-top: 1.65rem;   
-                                      width: 2%;
+                                      justify-content: flex-end;
+                                      padding-left: .5rem;
+                                      margin-right: -4.2rem;
                                      }
                                        
                              &-check {align-items: center;
                                       background-color: $color-tertiary;
-                                      border-radius: 0 0.9375rem 0.9375rem 0;
+                                      border-radius: 0 0.9402rem 0.9402rem 0;
                                       display: flex;
                                       height: 4.3125rem;
+                                      margin-left: 5rem;
+                                      margin-top: -0.76rem; 
+                                      margin-right: -5rem;  
                                       justify-content: center;
-                                      margin-right: -12px;
-                                      margin-top: -12px;
-                                      visibility: hidden;
-                                      width: 20%;
-                                                                  
-                                      .fa-circle-check {color: white;
-                                                        font-size: 1.3rem;
-                                                       }
-                                        
+                                      width: 4.5rem;
+                                                      
+                                      &-icon {color: white;
+                                              font-size: 1.5rem; 
+                                              transform: rotate(360deg);
+                                              transition: transform 0.5s linear; 
+                                             }     
                                      }
                             }
                } 

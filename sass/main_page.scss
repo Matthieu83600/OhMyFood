@@ -1,14 +1,16 @@
 //-------------- Base --------------//
 @import "base/color.scss";
+@import "base/typography.scss";
 
 //------------ Components ---------//
 @import "components/card-restaurants.scss";
 @import "components/loader.scss";
+
+//------------ Utils -------------//
+@import "utils/breakpoints.scss";
 
 //----------- Layout --------------//
 @import "layout/research.scss";
 @import "layout/description.scss";
 @import "layout/function.scss";
 @import "layout/restaurants.scss";
-
-//------------ Utils -------------//

@@ -2,6 +2,10 @@
               padding: 2.469rem 0 3.563rem 0;
               text-align: center;
 
-              & p {padding: 1.7rem;}
+              &__info {padding: 1.7rem;}
 
-}
+              @include desktop {&__title {@include description__title;}
+
+                                &__info {padding: 2rem;}
+                               }
+             }

@@ -32,12 +32,12 @@
         </form>
         <main>
             <section class="description">
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <h1 class="description__title">Réservez le menu qui vous convient</h1>
+                <p class="description__info">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <button class="button" onclick="window.location.href = '#restaurants';">Explorer nos restaurants</button>
             </section>
             <section class="function">
-                <h2>Fonctionnement</h2>
+                <h2 class="function__title">Fonctionnement</h2>
                 <ol class="function__steps">
                     <li class="function__steps-element">
                         <i class="fas fa-solid fa-mobile-screen-button"></i>
@@ -54,7 +54,8 @@
                 </ol>
             </section>
             <section id="restaurants" class="restaurants">
-                <h2>Restaurants</h2>
+                <h2 class="restaurants__title">Restaurants</h2>
+                <div class="restaurants__desktop">
                 <article class="restaurants__cards">
                     <a href="pages_menu/restaurant-la-palette-du-gout.html">
                         <img class="restaurants__cards-img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La Palette du goût">
@@ -113,6 +114,7 @@
                         </div>
                     </a>
                 </article>
+                </div>
             </section>
         </main>
         <footer class="footer">
