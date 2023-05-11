@@ -1,5 +1,6 @@
 .restaurants {background: $color-restaurants-bg;
               padding: 3.3rem 1.25rem;
+              width: 100%;
 
               @include desktop {&__title {margin-left: 11.25rem;}
 

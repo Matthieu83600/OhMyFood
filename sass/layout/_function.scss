@@ -1,10 +1,11 @@
-.function {max-width: 1440px;
-           padding: 3rem 1.25rem;
+.function {padding: 3rem 1.25rem;
+           width: 100%;
 
            @include desktop {text-align: center;
       
-                             &__title {margin-left: 11.25rem;
+                             &__title {margin-left: 11rem;
                                        text-align: start;
+                                       width: 100%;
                                       }
                             }
 
@@ -13,8 +14,10 @@
                      grid-template-columns: 1fr;
                      padding-left: 0.85rem;
 
-                     @include desktop {grid-template-columns: 1fr 1fr 1fr;
-                                       margin-left: 11.5rem;
+                     @include desktop {grid-template-columns: auto auto auto;
+                                       margin-left: 10.5rem;
+                                       margin-right: 2rem;
+                                       
                                       }
 
                      &-element {background: $color-function-steps-element;
@@ -25,7 +28,7 @@
                                 padding: 1.563rem;
                                 width: 100%;
 
-                                @include desktop {width: 75%;}
+                                @include desktop {width: 74%;}
 
                                 .fas {color: $color-icon-steps;
                                       padding: 0 1.3rem;
@@ -38,7 +41,9 @@
                                            margin-left: -2.4rem;
                                            padding: 0.3rem 0.6rem;
 
-                                           @include desktop {margin-left: -4.5rem;}
+                                           @include desktop {margin-left: -4.2rem;
+                                                             position: relative;
+                                                            }
                                           }
 
                                 &:hover {

@@ -5,8 +5,11 @@
 //-------- Components ---------//
 @import "components/card-menu.scss";
 
+//---------- Utils -----------//
+@import "utils/breakpoints.scss";
+@import "utils/menu-img.scss";
+
 //--------- Layout ------------//
 @import "layout/menu.scss";
 
-//---------- Utils -----------//
-@import "utils/menu-img.scss";
+

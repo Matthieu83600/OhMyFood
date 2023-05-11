@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/************************ Desktop ************************/
 @keyframes cards {
   0% {
     opacity: 0;
@@ -17,6 +18,20 @@ body {
     opacity: 1;
   }
 }
+.main__img {
+  height: 17.2rem;
+  position: absolute;
+  top: 3.94rem;
+  width: 100%;
+  z-index: -1;
+}
+@media (min-width: 1024px) {
+  .main__img {
+    height: 24rem;
+    object-fit: cover;
+  }
+}
+
 .menu {
   background: #F7F7F7;
   border-top-left-radius: 1.56rem;
@@ -29,24 +44,53 @@ body {
   width: 100%;
   z-index: 0;
 }
+@media (min-width: 1024px) {
+  .menu {
+    margin-left: 9rem;
+    margin-top: 21rem;
+    width: 82%;
+  }
+}
 .menu__title {
   font-family: "Shrikhand", sans-serif;
   font-style: italic;
   font-weight: 400;
   display: grid;
   grid-template-columns: auto auto;
+  margin-left: -1rem;
+}
+@media (min-width: 1024px) {
+  .menu__title {
+    font-size: 28px;
+    margin-left: 6rem;
+    margin-top: 1.7rem;
+    width: 100%;
+  }
 }
 .menu__title-icon {
   cursor: pointer;
   font-size: 1.5rem;
   justify-self: end;
-  margin-right: 1.56rem;
+  margin-right: 1.3rem;
   margin-top: 0.32rem;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .menu__title-icon {
+    font-size: 2rem;
+    justify-self: center;
+    margin-right: 13rem;
+  }
 }
 .menu__card {
   display: grid;
   grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .menu__card {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
 .menu__card-subtitle {
   font-size: 16px;
@@ -131,11 +175,17 @@ body {
   border-radius: 0 0.9402rem 0.9402rem 0;
   display: flex;
   height: 4.3125rem;
-  margin-left: 5rem;
+  margin-left: 5.3rem;
   margin-top: -0.76rem;
-  margin-right: -5rem;
+  margin-right: -5.3rem;
   justify-content: center;
   width: 4.5rem;
+}
+@media (min-width: 1024px) {
+  .menu__card-container-check {
+    margin-left: 5.3rem;
+    margin-right: -5.3rem;
+  }
 }
 .menu__card-container-check-icon {
   color: white;
@@ -143,18 +193,20 @@ body {
   transform: rotate(360deg);
   transition: transform 0.5s linear;
 }
+@media (min-width: 1024px) {
+  .menu__card-container-check-icon {
+    font-size: 2rem;
+  }
+}
 .menu__button {
   margin-bottom: 2.5rem;
   margin-top: 2.5rem;
   width: 52%;
 }
-
-.main__img {
-  height: 17.2rem;
-  position: absolute;
-  top: 3.94rem;
-  width: 100%;
-  z-index: -1;
+@media (min-width: 1024px) {
+  .menu__button {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=menu_page.css.map */

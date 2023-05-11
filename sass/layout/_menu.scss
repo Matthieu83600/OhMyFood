@@ -9,21 +9,42 @@
        width: 100%;
        z-index: 0;
 
+       @include desktop {margin-left: 9rem;
+                         margin-top: 21rem;
+                         width: 82%;
+                        }
+
        &__title {@include menu__title;
                  display: grid;
                  grid-template-columns: auto auto;
+                 margin-left: -1rem;
+
+                 @include desktop {@include menu__title-desktop;
+                                   margin-left: 6rem;
+                                   margin-top: 1.7rem;
+                                   width: 100%;
+                                  }
 
                  &-icon {cursor: pointer;
                          font-size: 1.5rem;
                          justify-self: end;
-                         margin-right: 1.56rem;
+                         margin-right: 1.3rem;
                          margin-top: 0.32rem;
                          position: relative;
+
+                         @include desktop {font-size: 2rem;
+                                           justify-self: center;
+                                           margin-right: 13rem;
+                                          }
                         }
                 }
 
        &__card {display: grid;
                 grid-template-columns: 1fr;
+
+                @include desktop {margin-left: 20%;
+                                  margin-right: 20%;
+                                 }
 
                 &-subtitle {@include menu__subtitle;
                             border-bottom: 3px solid $color-tertiary;
@@ -66,16 +87,22 @@
                                       border-radius: 0 0.9402rem 0.9402rem 0;
                                       display: flex;
                                       height: 4.3125rem;
-                                      margin-left: 5rem;
+                                      margin-left: 5.3rem;
                                       margin-top: -0.76rem; 
-                                      margin-right: -5rem;  
+                                      margin-right: -5.3rem;  
                                       justify-content: center;
                                       width: 4.5rem;
+
+                                      @include desktop {margin-left: 5.3rem;
+                                                        margin-right: -5.3rem;
+                                                       }
                                                       
                                       &-icon {color: white;
                                               font-size: 1.5rem; 
                                               transform: rotate(360deg);
                                               transition: transform 0.5s linear; 
+
+                                              @include desktop {font-size: 2rem;}
                                              }     
                                      }
                             }
@@ -84,6 +111,8 @@
         &__button {margin-bottom: 2.5rem;
                    margin-top: 2.5rem;
                    width: 52%;
+
+                   @include desktop {width: 25%;}
                   }   
 
        }

@@ -3,4 +3,8 @@
             top: 3.94rem;
             width: 100%;
             z-index: -1;
+
+            @include desktop {height: 24rem;
+                              object-fit: cover;
+                             }
            }

@@ -1,3 +1,6 @@
+//------------ Utils -------------//
+@import "utils/breakpoints.scss";
+
 //-------------- Base --------------//
 @import "base/base.scss";
 @import "base/color.scss";
@@ -6,9 +9,6 @@
 //------------ Components ---------//
 @import "components/button.scss";
 @import "components/heart.scss";
-
-//------------ Utils -------------//
-@import "utils/breakpoints.scss";
 
 //----------- Layout --------------//
 @import "layout/header.scss";
