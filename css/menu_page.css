@@ -20,15 +20,20 @@ body {
 }
 .main__img {
   height: 17.2rem;
+  object-fit: cover;
   position: absolute;
   top: 3.94rem;
   width: 100%;
   z-index: -1;
 }
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .main__img {
+    height: 20rem;
+  }
+}
 @media (min-width: 1024px) {
   .main__img {
     height: 24rem;
-    object-fit: cover;
   }
 }
 
@@ -44,9 +49,16 @@ body {
   width: 100%;
   z-index: 0;
 }
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .menu {
+    margin-left: 7%;
+    margin-top: 16rem;
+    width: 85%;
+  }
+}
 @media (min-width: 1024px) {
   .menu {
-    margin-left: 9rem;
+    margin-left: 9%;
     margin-top: 21rem;
     width: 82%;
   }
@@ -57,7 +69,12 @@ body {
   font-weight: 400;
   display: grid;
   grid-template-columns: auto auto;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .menu__title {
+    font-size: 20px;
+  }
 }
 @media (min-width: 1024px) {
   .menu__title {
@@ -71,9 +88,14 @@ body {
   cursor: pointer;
   font-size: 1.5rem;
   justify-self: end;
-  margin-right: 1.3rem;
+  margin-right: 1.2rem;
   margin-top: 0.32rem;
   position: relative;
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .menu__title-icon {
+    margin-right: 4.5rem;
+  }
 }
 @media (min-width: 1024px) {
   .menu__title-icon {
@@ -85,6 +107,12 @@ body {
 .menu__card {
   display: grid;
   grid-template-columns: 1fr;
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .menu__card {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 @media (min-width: 1024px) {
   .menu__card {
@@ -136,6 +164,14 @@ body {
 }
 .menu__card-container:active .menu__card-container-check-icon {
   transform: rotate(0deg);
+}
+@media (min-width: 1024px) {
+  .menu__card-container:hover .menu__card-container-check {
+    margin-right: -12px;
+  }
+  .menu__card-container:hover .menu__card-container-check-icon {
+    transform: rotate(0deg);
+  }
 }
 .menu__card-container-info {
   display: flex;
@@ -202,6 +238,11 @@ body {
   margin-bottom: 2.5rem;
   margin-top: 2.5rem;
   width: 52%;
+}
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .menu__button {
+    width: 35%;
+  }
 }
 @media (min-width: 1024px) {
   .menu__button {

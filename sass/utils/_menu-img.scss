@@ -1,10 +1,11 @@
 .main__img {height: 17.20rem;
+            object-fit: cover;
             position: absolute;
             top: 3.94rem;
             width: 100%;
             z-index: -1;
 
-            @include desktop {height: 24rem;
-                              object-fit: cover;
-                             }
+            @include tablet {height: 20rem;}
+
+            @include desktop {height: 24rem;}
            }

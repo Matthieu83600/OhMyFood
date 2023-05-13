@@ -1,6 +1,8 @@
 .function {padding: 3rem 1.25rem;
            width: 100%;
 
+           @include tablet {text-align: center;}
+
            @include desktop {text-align: center;
       
                              &__title {margin-left: 11rem;
@@ -17,7 +19,6 @@
                      @include desktop {grid-template-columns: auto auto auto;
                                        margin-left: 10.5rem;
                                        margin-right: 2rem;
-                                       
                                       }
 
                      &-element {background: $color-function-steps-element;
@@ -27,6 +28,9 @@
                                 margin-top: 1.625rem;
                                 padding: 1.563rem;
                                 width: 100%;
+
+                                @include tablet {justify-self: center;
+                                    width: 90%;}
 
                                 @include desktop {width: 74%;}
 
@@ -40,6 +44,10 @@
                                            content: " " counter(compteur);
                                            margin-left: -2.4rem;
                                            padding: 0.3rem 0.6rem;
+
+                                           @include tablet {left: 10%;
+                                                            position: absolute;
+                                                           }
 
                                            @include desktop {margin-left: -4.2rem;
                                                              position: relative;

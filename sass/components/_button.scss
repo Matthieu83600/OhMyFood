@@ -1,4 +1,5 @@
 @mixin btn {background: $color-btn;
+            border: 0px solid transparent;
             border-radius: 25px;
             box-shadow: $shadow-btn;
             color: $color-txt-white;
@@ -6,8 +7,8 @@
             opacity: 1;
             padding: 0.813rem 1.172rem;
 
-            &:hover {box-shadow: $shadow-btn-hover;
-                     opacity: 0.85;
+            &:hover {background: $color-btn-hover;
+                     box-shadow: $shadow-btn-hover;
                     }   
            }
 

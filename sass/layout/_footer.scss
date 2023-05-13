@@ -2,6 +2,9 @@
          color: $color-txt-white;
          padding: 1.375rem 1.563rem;
          width: 100%;
+
+         @include tablet {text-align: center;}
+
          @include desktop {display: flex;
                            flex-direction: row-reverse;
                            gap: 1rem;

@@ -5,7 +5,9 @@ body {font-family: "Roboto", sans-serif;}
                     font-weight: 400;
                    }
 
-@mixin menu__title-desktop {font-size: 28px;}
+$menu__title-tablet: 20px;                 
+
+$menu__title-desktop: 28px;
 
 @mixin menu__subtitle {font-size: 16px;
                        font-style: normal;

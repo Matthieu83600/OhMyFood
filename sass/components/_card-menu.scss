@@ -17,6 +17,11 @@
                   &:active .menu__card-container-check {margin-right: -12px;}
 
                   &:active .menu__card-container-check-icon {transform: rotate(0deg);}
+
+                  @include desktop {&:hover .menu__card-container-check {margin-right: -12px;}
+
+                                    &:hover .menu__card-container-check-icon {transform: rotate(0deg);}
+                                   }
                  }
 
                  @keyframes cards {0% {opacity:0;

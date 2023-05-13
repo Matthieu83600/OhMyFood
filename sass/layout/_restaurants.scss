@@ -2,6 +2,8 @@
               padding: 3.3rem 1.25rem;
               width: 100%;
 
+              @include tablet {text-align: center;}
+
               @include desktop {&__title {margin-left: 11.25rem;}
 
                                 &__desktop {display: grid;
@@ -28,6 +30,8 @@
 
                                     &-txt {gap: 5px;
                                            padding: 0.8rem;
+
+                                           @include tablet {text-align: start;}
                                           }
 
                                     &-icon {@include icon-restaurants;}
