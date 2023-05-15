@@ -1,4 +1,6 @@
-.function {padding: 3rem 1.25rem;
+.function {height: auto;
+           overflow: hidden;
+           padding: 3rem 1.25rem;
            width: 100%;
 
            @include tablet {text-align: center;}
@@ -16,9 +18,8 @@
                      grid-template-columns: 1fr;
                      padding-left: 0.85rem;
 
-                     @include desktop {grid-template-columns: auto auto auto;
+                     @include desktop {grid-template-columns: 1fr 1fr 1fr;
                                        margin-left: 10.5rem;
-                                       margin-right: 2rem;
                                       }
 
                      &-element {background: $color-function-steps-element;
@@ -30,9 +31,10 @@
                                 width: 100%;
 
                                 @include tablet {justify-self: center;
-                                    width: 90%;}
+                                                 width: 90%;
+                                                }
 
-                                @include desktop {width: 74%;}
+                                @include desktop {width: 80%;}
 
                                 .fas {color: $color-icon-steps;
                                       padding: 0 1.3rem;
@@ -45,13 +47,15 @@
                                            margin-left: -2.4rem;
                                            padding: 0.3rem 0.6rem;
 
-                                           @include tablet {left: 10%;
+                                           @include tablet {left: 11%;
                                                             position: absolute;
                                                            }
 
-                                           @include desktop {margin-left: -4.2rem;
-                                                             position: relative;
+                                           @include desktop {margin-left: -4%;
+                                                             margin-top: -5px;
+                                                             position: absolute;
                                                             }
+                                           
                                           }
 
                                 &:hover {

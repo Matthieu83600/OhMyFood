@@ -111,6 +111,8 @@ body {
 }
 
 .function {
+  height: auto;
+  overflow: hidden;
   padding: 3rem 1.25rem;
   width: 100%;
 }
@@ -137,9 +139,8 @@ body {
 }
 @media (min-width: 1024px) {
   .function__steps {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-left: 10.5rem;
-    margin-right: 2rem;
   }
 }
 .function__steps-element {
@@ -159,7 +160,7 @@ body {
 }
 @media (min-width: 1024px) {
   .function__steps-element {
-    width: 74%;
+    width: 80%;
   }
 }
 .function__steps-element .fas {
@@ -176,14 +177,15 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1023.99px) {
   .function__steps-element::before {
-    left: 10%;
+    left: 11%;
     position: absolute;
   }
 }
 @media (min-width: 1024px) {
   .function__steps-element::before {
-    margin-left: -4.2rem;
-    position: relative;
+    margin-left: -4%;
+    margin-top: -5px;
+    position: absolute;
   }
 }
 .function__steps-element:hover .fas {
