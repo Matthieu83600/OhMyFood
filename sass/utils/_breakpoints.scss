@@ -1,10 +1,13 @@
-// Taille minimale d'écran tablette
+// Tailles d'écran tablette
 $screen-tablet-min: 768px;
 $screen-tablet-max: 1023.99px;
 
-//Taille minimale d'écran pc
+//Tailles d'écran pc
 $screen-desktop-min: 1024px;
 $screen-desktop-max: 1440px;
+
+//Tailles d'écran large
+$screen-largeDesktop-min: 1441px;
 
 // Media queries Tablette
 @mixin tablet {
@@ -16,7 +19,15 @@ $screen-desktop-max: 1440px;
 
 //Media queries PC
 @mixin desktop {
-    @media (min-width: #{$screen-desktop-min})
+    @media (min-width: #{$screen-desktop-min}) and (max-width: #{$screen-desktop-max})
+    {
+        @content;
+    }
+}
+
+//Media queries Large Ecran
+@mixin largeDesktop {
+    @media (min-width: #{$screen-largeDesktop-min})
     {
         @content;
     }

@@ -13,6 +13,15 @@
                                            }
                                }
 
+               @include largeDesktop {&__title {margin-left: 11.25rem;}
+
+                                      &__desktop {display: grid;
+                                                  grid-template-columns: 1fr 1fr;
+                                                  margin-left: 10.98rem;
+                                                  margin-right: 2rem;
+                                                 }
+                                     }
+
               &__cards {@include cards_restaurants;
 
                         &-img {border-radius: 15px 15px 0 0;

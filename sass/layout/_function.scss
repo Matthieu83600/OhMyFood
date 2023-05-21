@@ -13,19 +13,32 @@
                                       }
                             }
 
-           &__steps {counter-reset: compteur;
-                     display: grid;
+            @include largeDesktop {text-align: center;
+
+                              &__title {margin-left: 11rem;
+                                        text-align: start;
+                                        width: 100%;
+                                       }
+                              }
+
+           &__steps {display: grid;
                      grid-template-columns: 1fr;
-                     padding-left: 0.85rem;
 
                      @include desktop {grid-template-columns: 1fr 1fr 1fr;
                                        margin-left: 10.5rem;
+                                       margin-right: 6.5rem;
+                                       padding: 1rem;
                                       }
+
+                     @include largeDesktop {grid-template-columns: 1fr 1fr 1fr;
+                                            margin-left: 10.5rem;
+                                            margin-right: 6.5rem;
+                                            padding: 1rem;
+                                           }
 
                      &-element {background: $color-function-steps-element;
                                 border-radius: 20px;
                                 box-shadow: $shadow-function-steps-element;
-                                counter-increment: compteur;
                                 margin-top: 1.625rem;
                                 padding: 1.563rem;
                                 width: 100%;
@@ -34,29 +47,23 @@
                                                  width: 90%;
                                                 }
 
-                                @include desktop {width: 80%;}
+                                @include desktop {width:85%;}
+
+                                @include largeDesktop {width:85%;}
+
+                                &-number {background: $color-primary;
+                                          border-radius: 100%;
+                                          color: $color-txt-white;
+                                          margin-left: -2.4rem;
+                                          margin-top: -1.4rem;
+                                          padding: 0.3rem 0.6rem;
+                                          position: absolute;
+                                          text-align: center;
+                                         }
 
                                 .fas {color: $color-icon-steps;
                                       padding: 0 1.3rem;
                                      }
-
-                                &::before {background: $color-primary;
-                                           border-radius: 100%;
-                                           color: $color-txt-white;
-                                           content: " " counter(compteur);
-                                           margin-left: -2.4rem;
-                                           padding: 0.3rem 0.6rem;
-
-                                           @include tablet {left: 11%;
-                                                            position: absolute;
-                                                           }
-
-                                           @include desktop {margin-left: -4%;
-                                                             margin-top: -5px;
-                                                             position: absolute;
-                                                            }
-                                           
-                                          }
 
                                 &:hover {
                                          .fas {color: $color-primary;}
