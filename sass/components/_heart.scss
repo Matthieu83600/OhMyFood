@@ -5,6 +5,7 @@
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;    
                        }
+                       
               @include desktop {&:hover {background: $color-heart;
                                          background-clip: text;
                                          font-weight: bold;
@@ -12,7 +13,16 @@
                                          -webkit-background-clip: text;
                                          -webkit-text-fill-color: transparent;  
                                         } 
-                               }     
+                               }   
+                               
+              @include largeDesktop {&:hover {background: $color-heart;
+                                              background-clip: text;
+                                              font-weight: bold;
+                                              transition: all 0.2s linear;
+                                              -webkit-background-clip: text;
+                                              -webkit-text-fill-color: transparent;  
+                                             } 
+                                    }
              }
 
 .fa-heart {@include heart;}
