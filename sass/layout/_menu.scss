@@ -39,17 +39,15 @@
 
                        &-title {@include menu__title;}
 
-                       &-icon {cursor: pointer;
-                               font-size: 1.8rem;
-                               margin-right: 0.3rem;
-                               margin-top: 0.3rem;
+                       &-icon {margin-right: 3%;
+                               margin-top: 8px;
+                               position: relative;
 
                                @include tablet {margin-right: 22%;}
 
-                               @include desktop {margin-right: 5%;}
+                               @include desktop {margin-right: 18%;}
 
-                               @include largeDesktop {margin-right: 10%;}
-
+                               @include largeDesktop {margin-right: 25%}
                               }
                       }
 

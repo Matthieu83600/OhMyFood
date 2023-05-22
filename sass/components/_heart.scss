@@ -1,28 +1,71 @@
-@mixin heart {&:active {background: $color-heart;
-                        background-clip: text;
-                        font-weight: bold;
-                        transition: all 0.2s linear;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;    
-                       }
-                       
-              @include desktop {&:hover {background: $color-heart;
-                                         background-clip: text;
-                                         font-weight: bold;
-                                         transition: all 0.2s linear;
-                                         -webkit-background-clip: text;
-                                         -webkit-text-fill-color: transparent;  
-                                        } 
-                               }   
-                               
-              @include largeDesktop {&:hover {background: $color-heart;
-                                              background-clip: text;
-                                              font-weight: bold;
-                                              transition: all 0.2s linear;
-                                              -webkit-background-clip: text;
-                                              -webkit-text-fill-color: transparent;  
-                                             } 
-                                    }
-             }
+// Placement coeurs Page d'accueil
+.like-heart {background: $color-heart;
+             background-clip: text;
+             color: transparent;
+             cursor: pointer;
+             font-size: 1.5rem;
+             font-weight: bold !important;
+             text-align: center; 
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent; 
+            }
 
-.fa-heart {@include heart;}
+.like-heart-empty {background: transparent;
+                   cursor: pointer;
+                   font-size: 1.5rem;
+                   font-weight: bold;
+                   position: absolute;
+                   top: 0;
+                   right: 0;
+                   bottom: 0;
+                   left: 0;      
+                  }
+
+// Placement coeurs Page Resto                  
+.like-heart-resto {background: $color-heart;
+                   background-clip: text;
+                   color: transparent;
+                   cursor: pointer;
+                   font-size: 1.5rem;
+                   font-weight: bold !important;
+                   text-align: center; 
+                   -webkit-background-clip: text;
+                   -webkit-text-fill-color: transparent; 
+                  }
+
+.like-heart-empty-resto {background: transparent;
+                         cursor: pointer;
+                         font-size: 1.5rem;
+                         font-weight: bold;
+                         position: absolute;
+                         top: 0;
+                         right: 0;
+                         bottom: 0;
+                         left: 0;      
+                        }
+
+// Animations coeurs Page d'accueil 
+.checklike:checked + label .like-heart {animation: likeHeartStart 0.5s forwards;}
+.checklike:checked + label .like-heart-empty {animation: likeHeartEnd 0.5s forwards;}
+
+.checklike:not(:checked) + label .like-heart {animation: likeHeartEnd 0.5s forwards;}
+.checklike:not(:checked) + label .like-heart-empty {animation: likeHeartStart 0.5s forwards;}
+
+//Animations coeurs Page Resto
+.checklike:checked + label .like-heart-resto {animation: likeHeartStart 0.5s forwards;}
+.checklike:checked + label .like-heart-empty-resto {animation: likeHeartEnd 0.5s forwards;}
+
+.checklike:not(:checked) + label .like-heart-resto {animation: likeHeartEnd 0.5s forwards;}
+.checklike:not(:checked) + label .like-heart-empty-resto {animation: likeHeartStart 0.5s forwards;}
+
+@keyframes likeHeartStart {
+      0% {opacity: 0;}
+  
+      100% {opacity: 1;}
+  }
+  
+  @keyframes likeHeartEnd{
+      0% {opacity: 1;}
+  
+      100% {opacity: 0;}
+  }

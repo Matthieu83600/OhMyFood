@@ -43,7 +43,11 @@
                                            @include tablet {text-align: start;}
                                           }
 
-                                    &-icon {@include icon-restaurants;}
+                                    &-icon {margin-left: 60%;
+                                            margin-top: 1.2rem;
+                                            position: relative;
+                                           }
                                    }
                        }
-             }
+            }
+             
