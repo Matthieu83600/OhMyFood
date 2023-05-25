@@ -30,7 +30,7 @@
                        @include tablet {margin-left: 10%;} 
 
                        @include desktop {margin-left: 30%;
-                                         width: 40%;
+                                         width: 50%;
                                         }
                         
                        @include largeDesktop {margin-left: 35%;
@@ -53,6 +53,7 @@
 
        &__card {display: grid;
                 grid-template-columns: 1fr;
+                width: 100%;
 
                 @include tablet {margin-left: 10%;
                                  margin-right: 10%;
@@ -71,64 +72,67 @@
                             margin-top: 2.5rem;
                             padding-bottom: 0.32rem;
                             width: 2.375rem;
-                           }
-              
-                &-container {@include card-menu;
-                             &-info {display: flex;
-                                     flex-direction: column;
-                                     overflow: hidden;
-                                     text-overflow: ellipsis;
-                                     white-space: nowrap;
-                                     width: 95%;
-                                    }  
-                                    
-                             &-info h3 {@include menu__info-h3;
-                                        overflow: hidden;
-                                        text-overflow: ellipsis;
-                                        white-space: nowrap;
-                                       }
+                           }        
 
-                             &-info p {@include menu__info-p;
-                                       margin-top: 0.3125rem; 
-                                       overflow: hidden;
-                                       text-overflow: ellipsis;
-                                       white-space: nowrap;
-                                      }
-                               
-                             &-price {align-self: flex-end;
-                                      display: flex;
+                & label {animation: cards 0.5s 1.8s both;
+                         @for $i from 1 through 7 {
+                                                  &:nth-child(#{$i}) {animation-delay:$i*0.20s;}
+                                                  } 
+                         border-radius: 17px;                                                                                                                
+                         overflow: hidden;
+                         padding: 5px;
+                        }           
+
+                &-container {@include card-menu;
+
+                             &-info {overflow: hidden;
+                                     text-overflow: ellipsis;
+                                     white-space: nowrap; 
+                                     width: 100%;
+                                     
+                                     & h3 {@include menu__info-h3;
+                                           overflow: hidden;
+                                           text-overflow: ellipsis;
+                                           white-space: nowrap;
+                                          }
+
+                                     & p {@include menu__info-p;
+                                          overflow: hidden; 
+                                          text-overflow: ellipsis;
+                                          white-space: nowrap;
+                                         }
+                                    } 
+
+                             &-price {display: flex;
                                       justify-content: flex-end;
-                                      padding-left: .5rem;
-                                      margin-right: -4.2rem;
-                                     }
-                                       
+                                      padding-left: .8rem;
+                                      padding-right: .4rem;
+                                     }         
+                               
                              &-check {align-items: center;
                                       background-color: $color-tertiary;
-                                      border-radius: 0 0.9402rem 0.9402rem 0;
+                                      border-radius: 0 0.9402rem 0.9402rem 0;  
                                       display: flex;
                                       height: 4.3125rem;
-                                      margin-left: 5.3rem;
-                                      margin-top: -0.76rem; 
-                                      margin-right: -5.3rem;  
                                       justify-content: center;
-                                      width: 4.5rem;
-                        
-                                      @include desktop {margin-left: 5.3rem;
-                                                        margin-right: -5.3rem;
+                                      margin-bottom: -.75rem;
+                                      margin-right: -.95rem;
+                                      min-width: 0px;
+                                      opacity: 0;
+                                      
+                                      transition: min-width 0.5s, opacity 0.3s;
+
+                                      .fa-circle-check {color: white;
+                                                        font-size: 1.5rem;
                                                        }
 
-                                      @include largeDesktop {margin-left: 6.5rem;
-                                                             margin-right: -6.5rem;
-                                                            }
-                                                              
-                                      &-icon {color: white;
-                                              font-size: 1.5rem; 
-                                              transform: rotate(360deg);
-                                              transition: transform 0.5s linear; 
+                                     }       
 
-                                              @include desktop {font-size: 2rem;}
-                                             }     
-                                     }
+                             @include tablet {width: 80%;}
+
+                             @include desktop {width: 65%;}
+
+                             @include largeDesktop {width: 70%;}
                             }
                } 
 
@@ -144,3 +148,20 @@
                   }   
 
        }
+      
+.checkcard:checked + label .menu__card-container-check {min-width: 4rem;
+                                                        opacity: 1;
+                                                        transform: scaleX(1);
+                                                       }
+
+
+@keyframes cards {0% {opacity:0;
+                      transform: translateY(20px);
+                     }
+
+                  30% {opacity: 0.5;}
+
+                  65% {opacity: 0.7;}
+
+                  100% {opacity:1;}
+                 }

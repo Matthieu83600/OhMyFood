@@ -1,41 +1,14 @@
-@mixin card-menu {animation: cards 0.5s 1 both;
-                  @for $i from 1 through 5 {
-                                            &:nth-child(#{$i}) {animation-delay:$i*0.15s;}
-                                           }
+@mixin card-menu {align-items: end;
                   background: $color-menu-container;
                   border-radius: 0.9402rem;
                   box-shadow: $shadow-menu;
                   cursor: pointer;
                   display: flex;
-                  height: 4.3125rem;
-                  margin-top: 1rem;
+                  height: 4.3225rem;    
+                  justify-content: space-between;    
+                  margin-top: 1rem;    
                   overflow: hidden;
-                  padding: 0.75rem;
+                  padding: 12px 15px;
                   text-align: start;
-                  max-width: 100%;
-
-                  &:active .menu__card-container-check {margin-right: -12px;}
-
-                  &:active .menu__card-container-check-icon {transform: rotate(0deg);}
-
-                  @include desktop {&:hover .menu__card-container-check {margin-right: -12px;}
-
-                                    &:hover .menu__card-container-check-icon {transform: rotate(0deg);}
-                                   }
-
-                  @include largeDesktop {&:hover .menu__card-container-check {margin-right: -12px;}
-
-                                         &:hover .menu__card-container-check-icon {transform: rotate(0deg);}
-                                        }
+                  width: 100%; 
                  }
-
-                 @keyframes cards {0% {opacity:0;
-                                       transform: translateY(20px);
-                                      }
-
-                                   30% {opacity: 0.5;}
-
-                                   65% {opacity: 0.7;}
-
-                                   100% {opacity:1;}
-                                  }
