@@ -1,5 +1,6 @@
 @mixin cards_restaurants {background: $color-restaurants-cards;
-                          border-radius: 15px;         
+                          border-radius: 15px;  
+                          cursor: pointer;       
                           margin-bottom: 1.125rem;
                           margin-top: 1.5rem;
                           width: 100%;
