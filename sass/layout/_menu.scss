@@ -4,7 +4,7 @@
        box-sizing: border-box;
        margin-top: 13.75rem;
        overflow: hidden;
-       padding: 1.5rem 1.07rem;
+       padding: 1.5rem 0.8125rem;
        text-align: center;
        width: 100%;
        z-index: 0;
@@ -78,7 +78,7 @@
                          @for $i from 1 through 7 {
                                                   &:nth-child(#{$i}) {animation-delay:$i*0.20s;}
                                                   } 
-                         border-radius: 17px;                                                                                                                
+                         border-radius: 15px;                                                                                                                
                          overflow: hidden;
                          padding: 5px;
                         }           
@@ -105,8 +105,7 @@
 
                              &-price {display: flex;
                                       justify-content: flex-end;
-                                      padding-left: .8rem;
-                                      padding-right: .4rem;
+                                      padding-right: .8rem;
                                      }         
                                
                              &-check {align-items: center;
@@ -116,14 +115,15 @@
                                       height: 4.3125rem;
                                       justify-content: center;
                                       margin-bottom: -.75rem;
-                                      margin-right: -.95rem;
+                                      margin-left: -.25rem;
+                                      margin-right: -1.1rem;
                                       min-width: 0px;
                                       opacity: 0;
-                                      
                                       transition: min-width 0.5s, opacity 0.3s;
 
                                       .fa-circle-check {color: white;
                                                         font-size: 1.5rem;
+                                                        margin-left: -.6rem;
                                                        }
 
                                      }       

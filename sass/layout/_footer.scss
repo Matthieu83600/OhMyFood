@@ -22,11 +22,12 @@
          &__title {@include footer__title;
                    padding-bottom: 1rem;
                    @include desktop {margin-right: 1.875rem;
-                                     margin-top: 3.5625rem;
+                                     margin-top: 3.1rem;
+                                     padding-left: 2rem;
                                     }
                   
                    @include largeDesktop {margin-right: 1.875rem;
-                                          margin-top: 3.5625rem;
+                                          margin-top: 3.1rem;
                                          }
                   }
 
@@ -46,6 +47,6 @@
 
                   &-info {padding-bottom: 0.4375rem;
                           a {color: $color-txt-white;}
-                         }                  
-                 }
+                         }                       
+                 }        
         }

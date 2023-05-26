@@ -4,11 +4,11 @@
 
               @include tablet {text-align: center;}
 
-              @include desktop {&__title {margin-left: 11.25rem;}
+              @include desktop {&__title {margin-left: 9.25rem;}
 
                                 &__desktop {display: grid;
                                             grid-template-columns: 1fr 1fr;
-                                            margin-left: 10.98rem;
+                                            margin-left: 9.5rem;
                                             margin-right: 2rem;
                                            }
                                }

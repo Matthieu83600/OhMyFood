@@ -1,8 +1,7 @@
 body {font-family: "Roboto", sans-serif;}
 
 @mixin menu__title {font-family: 'Shrikhand', sans-serif;
-                    font-size: 28px;
-                    font-style: italic;
+                    font-size: 28px;                
                     font-weight: 400;
                    }
 
@@ -22,9 +21,9 @@ body {font-family: "Roboto", sans-serif;}
                      font-size: 15.0431px;
                     }
 
-@mixin footer__title {font-family: 'Shrikhand', sans-serif;
-                      font-style: italic;
+@mixin footer__title {font-family: 'Shrikhand', sans-serif;                  
                       font-weight: 400;
+                      font-size: 18px;
                      }
 
 /************************ Desktop ************************/
@@ -32,3 +31,5 @@ body {font-family: "Roboto", sans-serif;}
                            font-style: normal;
                            font-weight: 700;
                           }
+
+.desktop2 {font-weight: 300;}
