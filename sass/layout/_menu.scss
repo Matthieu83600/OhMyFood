@@ -85,22 +85,25 @@
 
                 &-container {@include card-menu;
 
-                             &-info {overflow: hidden;
+                             &-info {display: flex;
+                                     flex-direction: column;
+                                     gap: 5px;
+                                     overflow: hidden;
                                      text-overflow: ellipsis;
                                      white-space: nowrap; 
                                      width: 100%;
                                      
-                                     & h3 {@include menu__info-h3;
-                                           overflow: hidden;
-                                           text-overflow: ellipsis;
-                                           white-space: nowrap;
-                                          }
+                                     &-title {@include menu__info-title;
+                                              overflow: hidden;
+                                              text-overflow: ellipsis;
+                                              white-space: nowrap;
+                                             }
 
-                                     & p {@include menu__info-p;
-                                          overflow: hidden; 
-                                          text-overflow: ellipsis;
-                                          white-space: nowrap;
-                                         }
+                                     &-desc {@include menu__info-desc;
+                                             overflow: hidden; 
+                                             text-overflow: ellipsis;
+                                             white-space: nowrap;
+                                            }
                                     } 
 
                              &-price {display: flex;

@@ -11,15 +11,15 @@ body {font-family: "Roboto", sans-serif;}
                        text-transform: uppercase;
                       }
 
-@mixin menu__info-h3 {font-style: normal;
-                      font-size: 18px;
-                      font-weight: 500;
-                     }
+@mixin menu__info-title {font-style: normal;
+                         font-size: 18px;
+                         font-weight: 500;
+                        }
 
-@mixin menu__info-p {font-style: normal;
-                     font-weight: 300;
-                     font-size: 15.0431px;
-                    }
+@mixin menu__info-desc {font-style: normal;
+                        font-weight: 300;
+                        font-size: 15.0431px;
+                       }
 
 @mixin footer__title {font-family: 'Shrikhand', sans-serif;                  
                       font-weight: 400;

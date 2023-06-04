@@ -3,6 +3,10 @@ body {
 }
 
 /************************ Desktop ************************/
+.desktop2 {
+  font-weight: 300;
+}
+
 .main__img {
   height: 17.2rem;
   object-fit: cover;
@@ -183,12 +187,15 @@ body {
   width: 100%;
 }
 .menu__card-container-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
 }
-.menu__card-container-info h3 {
+.menu__card-container-info-title {
   font-style: normal;
   font-size: 18px;
   font-weight: 500;
@@ -196,7 +203,7 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu__card-container-info p {
+.menu__card-container-info-desc {
   font-style: normal;
   font-weight: 300;
   font-size: 15.0431px;
